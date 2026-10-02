@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "timezone": "Europe/Moscow",
+  "daily_time": "03:00",
+  "report_period": "previous_calendar_day",
+  "revenue_source": "active_checks",
+  "discrepancy_policy": "preliminary",
+  "drive_folder_id": "1DEMdWEhkzy_5CD97JxJ9lInhrOC2SsUG",
+  "drive_daily_folders": true,
+  "drive_month_folders": true,
+  "drive_backend": "api",
+  "card_catalog_enabled": true,
+  "card_catalog_folder": "Справочники карт",
+  "drive_daily_folder_pattern": "%d.%m.%Y_отчёты",
+  "template_spreadsheet_id": "1SU6yBGjcoscLLJumvKV2vKOpbMw8KkdAU59-Fv-g7y0",
+  "filename_pattern": "{date_dd_mm_yyyy}_{base_name}_{report_type}.xlsx",
+  "production_enabled": true,
+  "checked_on": "2026-10-01",
+  "bases": [
+    {
+      "id": "vineshopper",
+      "name": "Вайншопер-Краснодар",
+      "url": "http://192.168.0.202:8081/Rozn_vineshopper",
+      "observed_title": "ВайнШоппер",
+      "login_verified": true,
+      "requires_local_network": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=9fd104421a08779f11f1bcc3e6c7c51a",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=9fd104421a08779f11f1bcc3f6bae5e8",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=9fd104421a08779f11f1bcc8c9372107",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      }
+    },
+    {
+      "id": "vda_vin_retz",
+      "name": "ВДА-Винотека",
+      "url": "http://62.173.152.87:25060/vda_vin_retz",
+      "observed_title": "ВДА ВИНОТЕКА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bc97a4e88604",
+        "stock": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bc97a4e88604",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bc990fb9cda7",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bca32a7cf212",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      }
+    },
+    {
+      "id": "vda_retz",
+      "name": "ВДА-Мильстрим",
+      "url": "http://62.173.152.87:25060/vda_retz",
+      "observed_title": "ВДА РОЗНИЦА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bca974f49776",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bcab58dfeb23",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8950acd14af0dc7b11f1bcabba43e4ed",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      }
+    },
+    {
+      "id": "grd_retz",
+      "name": "Гроздь-Мильстрим",
+      "stock_supplier_missing": true,
+      "stock_supplier_note": "Поле отсутствует в доступных реквизитах номенклатуры. 30.09.2026 пользователь разрешил сохранять столбец с пустыми значениями.",
+      "url": "http://185.31.160.50:30164/grd_retz",
+      "observed_title": "ГРОЗДЬ. 1С:РОЗНИЦА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bcb1dd635c0f",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bcb1f2690e4c",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bcb206d3781a",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      }
+    },
+    {
+      "id": "lg_retz",
+      "name": "Легенда-Геленджика",
+      "url": "http://185.31.160.50:8093/lg_retz",
+      "observed_title": "ЛегендаГеленджика",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bcccf80f4324",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccdb59924c3",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccddd995122",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      },
+      "stock_supplier_missing": true,
+      "stock_supplier_note": "30.09.2026 проверен полный список доступных полей номенклатуры: поставщик отсутствует. Столбец сохраняется пустым по указанию пользователя."
+    },
+    {
+      "id": "mariko_roznz",
+      "name": "Марико-Винотека-РФ",
+      "url": "http://77.233.3.125:25060/Roznz",
+      "observed_title": null,
+      "login_verified": false,
+      "name_source": "Порядок ссылок и скриншот пользователя; требует проверки",
+      "status": "http_timeout",
+      "availability_checked_on": "2026-09-30",
+      "availability_evidence": "Chrome navigation timed out at 25 seconds; independent HTTP GET timed out at 20 seconds",
+      "enabled": false,
+      "disabled_reason": "User confirmed this base is unavailable and explicitly requested to ignore it"
+    },
+    {
+      "id": "mk_ret2z",
+      "name": "Марико-Винотека",
+      "url": "http://185.31.160.50:8093/mk_ret2z",
+      "observed_title": "МАРИКО ВИНОТЕКА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bcca6186a68e",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccca05b2cc1",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccfb61d5df7",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      }
+    },
+    {
+      "id": "mk_retz",
+      "name": "Марико-Мильстрим",
+      "card_catalog_format": "xlsx",
+      "url": "http://185.31.160.50:8093/mk_retz",
+      "observed_title": "МАРИКО. 1С:РОЗНИЦА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccab128b2c8",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccad16b0f3a",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=87209ea61ad22bbd11f1bccb5f76208e",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      },
+      "stock_supplier_missing": true,
+      "stock_supplier_note": "30.09.2026 проверен полный список доступных полей номенклатуры: поставщик отсутствует. Столбец сохраняется пустым по указанию пользователя."
+    },
+    {
+      "id": "svu_retz",
+      "name": "Север-Юг-Мильстрим",
+      "url": "http://185.31.160.50:30164/svu_retz",
+      "observed_title": "СЕВЕР ЮГ. 1С:РОЗНИЦА",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bccbec5550b4",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bcce70053410",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=8a8badfffce3d19a11f1bcceb7965466",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      },
+      "stock_supplier_missing": true,
+      "stock_supplier_note": "30.09.2026 проверен полный список доступных полей номенклатуры: поставщик отсутствует. Столбец сохраняется пустым по указанию пользователя."
+    },
+    {
+      "id": "simple_roznz",
+      "name": "Симпл-Вэй-Мильстрим",
+      "url": "http://91.122.55.83:25060/Roznz",
+      "observed_title": "CИМПЛВЭЙ",
+      "login_verified": true,
+      "report_links": {
+        "stock_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=a3ead85ed35e7f6c11f1bcbd403609cc",
+        "alcohol_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=a3ead85ed35e7f6c11f1bcbf7f18720a",
+        "receipts_variant": "e1cib/data/Справочник.ВариантыОтчетов?ref=a3ead85ed35e7f6c11f1bcbfa2a60fcb",
+        "checks_list": "e1cib/list/Документ.ЧекККМ",
+        "cards_list": "e1cib/list/Справочник.ИнформационныеКарты"
+      },
+      "stock_supplier_missing": true,
+      "stock_supplier_note": "Поле поставщика отсутствует в доступных полях номенклатуры; полный список проверен 30.09.2026. По согласованному правилу столбец оставляется пустым."
+    }
+  ],
+  "reports": {
+    "Продажи": [
+      "Дата отчёта",
+      "Адрес магазина",
+      "Выручка",
+      "Количество чеков",
+      "Алкоголь, ед.",
+      "Количество возвратов",
+      "Сумма возвратов",
+      "Средний чек"
+    ],
+    "Остатки": [
+      "Дата отчёта",
+      "Адрес магазина",
+      "Номенклатура",
+      "Поставщик",
+      "Начальный остаток",
+      "Приход",
+      "Расход",
+      "Конечный остаток"
+    ],
+    "Бонусы": [
+      "Дата покупки",
+      "Дисконтная карта — номер и владелец",
+      "Сумма по ДК",
+      "Количество чеков",
+      "Магазин"
+    ]
+  }
+}

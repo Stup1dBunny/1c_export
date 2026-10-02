@@ -1,0 +1,13 @@
+{
+  "profile": "chrome_profile",
+  "downloads": "downloads",
+  "selenium_cache": "selenium_cache",
+  "google_token": "google-auth/token.json",
+  "credentials_source": "credentials.py",
+  "state": "state",
+  "drive_state": "drive-state",
+  "runs": "runs",
+  "reports": "reports",
+  "node": "runtime/node.exe",
+  "builder": "build_reports.mjs"
+}

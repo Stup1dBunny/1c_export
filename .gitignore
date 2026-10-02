@@ -1,0 +1,64 @@
+# Place this file in C:/1c_export/.gitignore (the repository root).
+# Keep automation source files, bases.json, runtime.json, launchers and guides.
+# This file does not remove files that Git already tracks.
+# Authentication and local secrets.
+/automation/credentials.py
+/automation/google-auth/
+.env
+.env.*
+!.env.example
+client_secret*.json
+token*.json
+credentials*.json
+*.pem
+*.key
+# Local Python/Node runtimes and downloaded dependencies.
+/automation/.venv/
+/automation/node_modules/
+/automation/runtime/
+/automation/selenium_cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Browser sessions, exported business data and recovery/publication state.
+/automation/chrome_profile/
+/automation/downloads/
+/automation/prepared/
+/automation/reports/
+/automation/runs/
+/automation/state/
+/automation/drive-state/
+/automation/updates/
+/automation/installation.json
+# Generated diagnostics, previews and unfinished downloads.
+*.inspect.ndjson
+preview-*.png
+inspection-*.txt
+*.log
+*.tmp
+*.part
+*.crdownload
+/automation/program-tests.html
+# Previous prototype in C:/1c_export; not used by the installed application.
+/config.json
+/login_test.py
+/probe.py
+/export.py
+/chromedriver.exe
+/requirements.txt
+/downloads/
+/output/
+/exemple/
+# Local backup copies (store complete backups outside the repository).
+/backup/
+/backups/
+/automation/.venv-old-pc/
+/automation/chrome_profile-old-pc/
+*.bak
+# Editor and Windows metadata.
+/.idea/
+/.vscode/
+Thumbs.db
+Desktop.ini
